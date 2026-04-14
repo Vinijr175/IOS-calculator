@@ -1,0 +1,77 @@
+/* App.css */
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.calculator-wrapper {
+  width: 330px; 
+  height: 550px;
+  background-color: black;
+  border-radius: 40px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.result-display {
+  flex: 1;
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 10px 10px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+  background-color: #333333; /* Default Dark Gray for numbers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: filter 0.1s;
+}
+
+button:active {
+  filter: brightness(1.5);
+}
+
+/* --- THE COLOURS ARE BACK --- */
+
+.button-gray {
+  background-color: #A5A5A5; /* Light Gray for AC, +/-, % */
+  color: black;
+}
+
+.button-orange {
+  background-color: #FF9F0A; /* Orange for Operators */
+  color: white;
+}
+
+.button-zero {
+  grid-column: span 2;
+  width: 142px; /* (65*2) + 12 gap */
+  border-radius: 35px;
+  justify-content: flex-start;
+  padding-left: 25px;
+}

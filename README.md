@@ -1,4 +1,4 @@
- How to run it on your laptop
+ How to run it 
 
 1. Clone the repo
    `git clone https://github.com`
